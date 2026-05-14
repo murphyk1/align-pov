@@ -42,8 +42,8 @@ The output is always `.docx`.
 In Claude Code, run these commands:
 
 ```
-/plugin marketplace add kmurphy1/align-pov
-/plugin install align-pov@kmurphy1-align-pov
+/plugin marketplace add murphyk1/align-pov
+/plugin install align-pov@murphyk1-align-pov
 /reload-plugins
 ```
 
