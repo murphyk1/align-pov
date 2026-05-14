@@ -39,15 +39,26 @@ The output is always `.docx`.
 
 ## Installation
 
-In Claude Code, run these commands:
+`/align-pov` is a Claude Code custom slash command. Install it by copying the command file to the right location:
 
+**Global install** (available in every project):
 ```
-/plugin marketplace add murphyk1/align-pov
-/plugin install align-pov@murphyk1-align-pov
-/reload-plugins
+mkdir -p ~/.claude/commands
+curl -o ~/.claude/commands/align-pov.md https://raw.githubusercontent.com/murphyk1/align-pov/main/commands/align-pov.md
 ```
 
-Verify the install with `/plugin` and look for `align-pov` under the **Installed** tab.
+**Project-only install** (available only in the current project):
+```
+mkdir -p .claude/commands
+curl -o .claude/commands/align-pov.md https://raw.githubusercontent.com/murphyk1/align-pov/main/commands/align-pov.md
+```
+
+Or clone the repo and copy the file manually:
+```
+cp commands/align-pov.md ~/.claude/commands/align-pov.md
+```
+
+Restart Claude Code (or open a new session) and `/align-pov` will be available.
 
 ## Usage
 
